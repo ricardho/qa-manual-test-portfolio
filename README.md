@@ -1,43 +1,47 @@
 # QA Test Cases - Automation Practice / QAZANDO Shop
 
-Projeto de documentação de testes manuais e cenários em Gherkin para um e-commerce de prática, com foco nas funcionalidades de login, cadastro, carrinho, checkout e finalização de pedido.
+**English** | [Português](README.pt-BR.md)
 
-## Objetivo
+Manual test documentation and Gherkin scenarios for a practice e-commerce site, focused on the login, sign-up, cart, checkout and order completion features.
 
-Demonstrar capacidade de análise de testes, escrita de casos de teste, cobertura de fluxos críticos, organização de documentação e uso de Gherkin em um contexto semelhante ao de ferramentas como Jira, Xray, Zephyr Scale, Azure Test Plans ou TestRail.
+> The test artifacts (test plan, test cases, Gherkin scenarios, test data and bug report) are written in Portuguese.
 
-## Escopo funcional
+## Goal
+
+Demonstrate skills in test analysis, test case writing, coverage of critical flows, documentation organization and use of Gherkin, in a context similar to tools such as Jira, Xray, Zephyr Scale, Azure Test Plans or TestRail.
+
+## Functional scope
 
 - Login
-- Cadastro de usuário
-- Carrinho de compras
+- User sign-up
+- Shopping cart
 - Checkout
-- Finalização de pedido
+- Order completion
 
-## Fora de escopo
+## Out of scope
 
-- Automação de testes
-- Testes de performance
-- Testes de acessibilidade completos
-- Validação real de gateway de pagamento
-- Validação direta em banco de dados
+- Test automation
+- Performance testing
+- Full accessibility testing
+- Real payment gateway validation
+- Direct database validation
 
-## Estrutura do repositório
+## Repository structure
 
 ```text
 qa-test-cases-automation-practice/
 ├── README.md
 ├── docs/
-│   ├── Plano_de_Testes.md
-│   ├── Estrategia_de_Testes.md
-│   ├── Matriz_de_Rastreabilidade.md
-│   └── Checklist_Regressao.md
-├── traditional/
+│   ├── Plano_de_Testes.md              (Test Plan)
+│   ├── Estrategia_de_Testes.md         (Test Strategy)
+│   ├── Matriz_de_Rastreabilidade.md    (Traceability Matrix)
+│   └── Checklist_Regressao.md          (Regression Checklist)
+├── traditional/                        (step-by-step test cases)
 │   ├── login.md
-│   ├── cadastro.md
-│   ├── carrinho.md
+│   ├── cadastro.md                     (sign-up)
+│   ├── carrinho.md                     (cart)
 │   ├── checkout.md
-│   └── finalizar_pedido.md
+│   └── finalizar_pedido.md             (order completion)
 ├── gherkin/
 │   ├── login.feature
 │   ├── cadastro.feature
@@ -45,35 +49,35 @@ qa-test-cases-automation-practice/
 │   ├── checkout.feature
 │   └── finalizar_pedido.feature
 ├── test-data/
-│   ├── usuarios.md
-│   ├── produtos.md
-│   └── cartoes.md
+│   ├── usuarios.md                     (users)
+│   ├── produtos.md                     (products)
+│   └── cartoes.md                      (cards)
 ├── bug-report/
 │   └── BUG-001.md
-└── evidencias/
+└── evidencias/                         (test evidence)
     └── README.md
 ```
 
-## Critérios de priorização
+## Prioritization criteria
 
-| Prioridade | Critério |
+| Priority | Criterion |
 |---|---|
-| Alta | Fluxo crítico para autenticação, compra ou pagamento |
-| Média | Fluxo relevante, mas com alternativa operacional |
-| Baixa | Validação complementar ou cenário de menor impacto |
+| High | Critical flow for authentication, purchase or payment |
+| Medium | Relevant flow, but with an operational workaround |
+| Low | Complementary validation or lower-impact scenario |
 
-## Tipos de teste aplicados
+## Test types applied
 
-- Teste funcional
-- Teste negativo
-- Teste exploratório estruturado
-- Smoke test
-- Regressão
-- Partição de equivalência
-- Valor limite
-- Validação de campos obrigatórios
-- Validação de regra de negócio
+- Functional testing
+- Negative testing
+- Structured exploratory testing
+- Smoke testing
+- Regression testing
+- Equivalence partitioning
+- Boundary value analysis
+- Required field validation
+- Business rule validation
 
-## Observação
+## Note
 
-Este projeto tem escopo reduzido de forma proposital. A intenção é mostrar qualidade de documentação e raciocínio de QA sem transformar o repositório em um volume excessivo de casos repetitivos.
+This project has a deliberately reduced scope. The intention is to show documentation quality and QA reasoning without turning the repository into an excessive volume of repetitive test cases.
